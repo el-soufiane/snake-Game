@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #9fd3ac;
+    color: #ff0000;
+    text-align: center;
+    padding: 1em 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.accueil {
+    text-align: center;
+    padding: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.choix-niveau {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boutons {
+    display: flex;
+    gap: 1em;
+}
+
+.bouton {
+    display: inline-block;
+    padding: 0.5em 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+}
+
+.bouton:hover {
+    background-color: #eee;
+}
+
+
+@media (max-width: 768px) {
+    .choix-niveau {
+        flex-direction: column;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>~~~Snake Game~~~> °</h1>
+    </header>
+
+    <main>
+        <div class="accueil">
+            <h2>Jouez à Snake Game maintenant !</h2>
+
+            <div class="choix-niveau">
+                <h3>Choisissez votre niveau :</h3>
+                <div class="boutons">
+                    <a href="snake.html" class="bouton">Facile</a>
+                    <a href="normal.html" class="bouton">Normal</a>
+                    <a href="avancé.html" class="bouton">Avancé</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
